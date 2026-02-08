@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ادمینی Nimajahan حرفه‌ای</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    background: linear-gradient(to right, #e0f7ff, #f0f8ff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  header {
+    background-color: #00bfff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    flex: 1 1 280px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0,191,255,0.1);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+  }
+  .card:hover::before {
+    top: -20%;
+    left: -20%;
+  }
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  }
+  .card h3 {
+    margin-top: 0;
+    color: #00bfff;
+    font-size: 24px;
+  }
+  .card p {
+    font-size: 16px;
+    margin: 15px 0 0;
+  }
+  .card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .card a:hover {
+    background-color: #0095d6;
+    transform: scale(1.05);
+  }
+  .contact {
+    margin-top: 50px;
+    background-color: #e6f7ff;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  }
+  .contact h3 {
+    margin-top: 0;
+    color: #00bfff;
+    font-size: 22px;
+  }
+  .contact a {
+    display: inline-block;
+    margin: 8px 12px;
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s ease;
+  }
+  .contact a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #00bfff;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s ease;
+  }
+  .contact a:hover::after {
+    width: 100%;
+  }
+  .contact p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  @media(max-width: 800px) {
+    .cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>خدمات Nimajahan</header>
+
+<div class="container">
+  <div class="cards">
+    <div class="card">
+      <h3>مدیریت اینستاگرام</h3>
+      <p>افزایش فالوور، مدیریت محتوا و امنیت پیج شما.</p>
+      <a href="https://t.me/nimajahan70" target="_blank">تلگرام</a>
+    </div>
+    <div class="card">
+      <h3>طراحی سایت</h3>
+      <p>سایت حرفه‌ای و واکنش‌گرا برای کسب و کار شما.</p>
+      <a href="https://t.me/nimajahan70" target="_blank">تلگرام</a>
+    </div>
+    <div class="card">
+      <h3>خرید تیک آبی</h3>
+      <p>دریافت تیک آبی اینستاگرام با امنیت و سرعت بالا.</p>
+      <a href="https://t.me/nimajahan70" target="_blank">تلگرام</a>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h3>راه‌های ارتباطی</h3>
+    <p>
+      <a href="https://t.me/nimajahan70" target="_blank">تلگرام</a> |
+      <a href="https://wa.me/09915961907" target="_blank">واتساپ</a> |
+      <a href="https://eitaa.com/09915961907" target="_blank">ایتا</a> |
+      پشتیبانی: <a href="#">nimajahan55</a>
+    </p>
+    <p>شماره تماس: ۰۹۹۱۵۹۶۱۹۰۷</p>
+  </div>
+</div>
+
+</body>
+</html>
